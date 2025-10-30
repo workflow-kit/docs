@@ -1,0 +1,91 @@
+site_name: "workflow-kit"
+site_description: "Comprehensive workflow documentation for modern development teams"
+repo_url: https://github.com/workflow-kit/
+repo_name: workflow-kit
+
+theme:
+  name: material
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+    - search.share
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Workflows:
+      - PR Auto-Labeler:
+          - Overview: workflows/pr-auto-labeler/index.md
+          - Quick Start: workflows/pr-auto-labeler/quick-start.md
+          - Configuration: workflows/pr-auto-labeler/configuration.md
+          - Rules Reference:
+              - Overview: workflows/pr-auto-labeler/rules/index.md
+              - Frontend & UI: workflows/pr-auto-labeler/rules/frontend.md
+              - Database: workflows/pr-auto-labeler/rules/database.md
+              - Environment & Config: workflows/pr-auto-labeler/rules/environment.md
+              - Testing: workflows/pr-auto-labeler/rules/testing.md
+              - Dependencies: workflows/pr-auto-labeler/rules/dependencies.md
+              - CI/CD & Infrastructure: workflows/pr-auto-labeler/rules/infrastructure.md
+              - Security: workflows/pr-auto-labeler/rules/security.md
+              - Code Semantics: workflows/pr-auto-labeler/rules/semantics.md
+              - PR Metadata: workflows/pr-auto-labeler/rules/meta.md
+          - Usage Examples: workflows/pr-auto-labeler/examples.md
+          - Troubleshooting: workflows/pr-auto-labeler/troubleshooting.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+  - tables
+  - footnotes
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - mermaid2
