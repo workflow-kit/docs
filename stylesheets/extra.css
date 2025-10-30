@@ -1,0 +1,69 @@
+/* Developer-focused custom styling */
+
+/* Darker code blocks with better contrast */
+.highlight pre {
+    background-color: #1e1e1e !important;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* Enhanced inline code */
+code {
+    background-color: #2d2d2d !important;
+    color: #89ddff !important;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Accent colors for links */
+.md-typeset a {
+    color: #64b5f6;
+}
+
+.md-typeset a:hover {
+    color: #42a5f5;
+}
+
+/* Enhanced admonitions */
+.md-typeset .admonition {
+    border-left: 4px solid;
+    border-radius: 4px;
+}
+
+/* Better table styling */
+.md-typeset table:not([class]) {
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #2d2d2d;
+    font-weight: 600;
+}
+
+/* Enhanced buttons */
+.md-button {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.md-button--primary {
+    background-color: #5e35b1 !important;
+}
+
+.md-button--primary:hover {
+    background-color: #7e57c2 !important;
+}
+
+/* Code annotations */
+.md-typeset .highlight .hll {
+    background-color: #264f78;
+}
+
+/* Mermaid diagrams dark theme */
+.mermaid {
+    background-color: transparent !important;
+}
+
