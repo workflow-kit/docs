@@ -1,7 +1,7 @@
 # workflow-kit
 
 <p align="center">
-  <img src="assets/images/logo.svg" alt="workflow-kit logo" width="140" height="140" />
+  <img src="assets/images/logo.png" alt="workflow-kit logo" width="140" height="140" />
 </p>
 
 <p align="center"><strong>Modern workflow automation for development teams</strong></p>
