@@ -24,7 +24,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
 <div class="grid cards" markdown>
 
--   :material-palette:{ .lg .middle } __Frontend & UI__
+-   🎨 __Frontend & UI__
 
     ---
 
@@ -32,7 +32,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **2 rules** | [View Details →](frontend.md)
 
--   :material-database:{ .lg .middle } __Database__
+-   🗄️ __Database__
 
     ---
 
@@ -40,7 +40,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **4 rules** | [View Details →](database.md)
 
--   :material-cog:{ .lg .middle } __Environment & Config__
+-   ⚙️ __Environment & Config__
 
     ---
 
@@ -48,7 +48,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **3 rules** | [View Details →](environment.md)
 
--   :material-test-tube:{ .lg .middle } __Testing__
+-   🧪 __Testing__
 
     ---
 
@@ -56,7 +56,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **3 rules** | [View Details →](testing.md)
 
--   :material-package:{ .lg .middle } __Dependencies__
+-   📦 __Dependencies__
 
     ---
 
@@ -64,7 +64,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **3 rules** | [View Details →](dependencies.md)
 
--   :material-cloud:{ .lg .middle } __CI/CD & Infrastructure__
+-   ☁️ __CI/CD & Infrastructure__
 
     ---
 
@@ -72,7 +72,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **3 rules** | [View Details →](infrastructure.md)
 
--   :material-shield-lock:{ .lg .middle } __Security__
+-   🔒 __Security__
 
     ---
 
@@ -80,7 +80,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **2 rules** | [View Details →](security.md)
 
--   :material-code-braces:{ .lg .middle } __Code Semantics__
+-   💻 __Code Semantics__
 
     ---
 
@@ -88,7 +88,7 @@ Rules are organized into **9 categories** based on what they detect. Each rule:
 
     **4 rules** | [View Details →](semantics.md)
 
--   :material-file-document:{ .lg .middle } __PR Metadata__
+-   📄 __PR Metadata__
 
     ---
 
@@ -354,19 +354,19 @@ enable_debug: true
 
 Explore detailed documentation for each rule category:
 
-1. [:material-palette: Frontend & UI Rules](frontend.md)
-2. [:material-database: Database Rules](database.md)
-3. [:material-cog: Environment & Config Rules](environment.md)
-4. [:material-test-tube: Testing Rules](testing.md)
-5. [:material-package: Dependency Rules](dependencies.md)
-6. [:material-cloud: CI/CD & Infrastructure Rules](infrastructure.md)
-7. [:material-shield-lock: Security Rules](security.md)
-8. [:material-code-braces: Code Semantics Rules](semantics.md)
-9. [:material-file-document: PR Metadata Rules](meta.md)
+1. [🎨 Frontend & UI Rules](frontend.md)
+2. [🗄️ Database Rules](database.md)
+3. [⚙️ Environment & Config Rules](environment.md)
+4. [🧪 Testing Rules](testing.md)
+5. [📦 Dependency Rules](dependencies.md)
+6. [☁️ CI/CD & Infrastructure Rules](infrastructure.md)
+7. [🔒 Security Rules](security.md)
+8. [💻 Code Semantics Rules](semantics.md)
+9. [📄 PR Metadata Rules](meta.md)
 
 Or jump to:
 
-- [:material-lightbulb-on: Usage Examples](../examples.md)
-- [:material-cog: Configuration Guide](../configuration.md)
-- [:material-help-circle: Troubleshooting](../troubleshooting.md)
+- [💡 Usage Examples](../examples.md)
+- [⚙️ Configuration Guide](../configuration.md)
+- [❓ Troubleshooting](../troubleshooting.md)
 

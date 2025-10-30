@@ -220,7 +220,7 @@ Trigger visual regression tests on UI changes:
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["ui-change"]'
       
@@ -274,9 +274,9 @@ Use GitHub branch protection to require reviews:
 
 ## Related Rules
 
-- [**test-missing**](testing.md#test-missing) :material-test-tube: — Check if UI changes include tests
-- [**dependency-change**](dependencies.md#dependency-change) :material-package: — Track UI library updates
-- [**refactor**](semantics.md#refactor) :material-code-braces: — Detect UI refactoring
+- [**test-missing**](testing.md#test-missing) 🧪 — Check if UI changes include tests
+- [**dependency-change**](dependencies.md#dependency-change) 📦 — Track UI library updates
+- [**refactor**](semantics.md#refactor) 🔄 — Detect UI refactoring
 
 ---
 

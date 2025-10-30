@@ -81,7 +81,7 @@ Require security team review:
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["security-change"]'
       
@@ -180,7 +180,7 @@ Block PRs with risky code using GitHub Actions:
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["risky-code"]'
       
@@ -228,7 +228,7 @@ permissions:
 jobs:
   security-labels:
     runs-on: ubuntu-latest
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '[
         "security-change",
@@ -313,9 +313,9 @@ jobs:
 
 ## Related Rules
 
-- [**potential-secret-leak**](environment.md#potential-secret-leak) :material-cog: — Detect leaked secrets
-- [**risky-migration**](database.md#risky-migration) :material-database: — Database security
-- [**test-missing**](testing.md#test-missing) :material-test-tube: — Ensure security tests
+- [**potential-secret-leak**](environment.md#potential-secret-leak) 🔐 — Detect leaked secrets
+- [**risky-migration**](database.md#risky-migration) 🗄️ — Database security
+- [**test-missing**](testing.md#test-missing) 🧪 — Ensure security tests
 
 [← Back to Rules Overview](index.md){ .md-button }
 

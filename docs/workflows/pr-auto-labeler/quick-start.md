@@ -37,7 +37,7 @@ permissions:
 
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1 # (4)!
+    uses: workflow-kit/pr-auto-labeler@v0.0.1 # (4)!
     with:
       enabled_rules: '["ui-change", "test-missing", "large-pr"]' # (5)!
 ```
@@ -214,10 +214,10 @@ Choose a preset based on your team's needs:
 
 Now that you have the basics working:
 
-- [:material-cog: Learn All Configuration Options](configuration.md)
-- [:material-book-open-variant: Explore All Available Rules](rules/index.md)
-- [:material-lightbulb-on: See Real-World Examples](examples.md)
-- [:material-help-circle: View Troubleshooting Guide](troubleshooting.md)
+- [⚙️ Learn All Configuration Options](configuration.md)
+- [📖 Explore All Available Rules](rules/index.md)
+- [💡 See Real-World Examples](examples.md)
+- [❓ View Troubleshooting Guide](troubleshooting.md)
 
 ---
 

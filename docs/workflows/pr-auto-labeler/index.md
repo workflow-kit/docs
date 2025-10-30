@@ -111,7 +111,7 @@ enable_debug: true
 
     jobs:
       label:
-        uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+        uses: workflow-kit/pr-auto-labeler@v0.0.1
         with:
           enabled_rules: '["ui-change", "test-missing", "large-pr"]'
     ```
@@ -131,50 +131,31 @@ enable_debug: true
 
 <div class="grid" markdown>
 
-=== ":material-rocket-launch: Quick Start"
+=== "🚀 Quick Start"
 
     Get up and running in 5 minutes
 
     [Quick Start Guide →](quick-start.md)
 
-=== ":material-cog: Configuration"
+=== "⚙️ Configuration"
 
     Learn all configuration options
 
     [Configuration Guide →](configuration.md)
 
-=== ":material-book-open-variant: Rules Reference"
+=== "📖 Rules Reference"
 
     Explore all 30+ available rules
 
     [Rules Reference →](rules/index.md)
 
-=== ":material-lightbulb-on: Examples"
+=== "💡 Examples"
 
     See real-world usage examples
 
     [Usage Examples →](examples.md)
 
 </div>
-
----
-
-## Architecture
-
-```mermaid
-flowchart LR
-    PR[Pull Request Event] --> Action[PR Auto-Labeler]
-    Action --> Files[Analyze Changed Files]
-    Action --> Patterns[Check Code Patterns]
-    Action --> Meta[Review PR Metadata]
-    
-    Files --> Rules{Enabled Rules}
-    Patterns --> Rules
-    Meta --> Rules
-    
-    Rules --> Labels[Apply Labels]
-    Labels --> GitHub[GitHub PR]
-```
 
 ---
 

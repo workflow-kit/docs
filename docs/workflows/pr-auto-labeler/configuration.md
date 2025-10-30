@@ -142,7 +142,7 @@ permissions:
 jobs:
   label:
     runs-on: ubuntu-latest
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       # Enable specific rules
       enabled_rules: '[
@@ -184,7 +184,7 @@ Run the labeler only on specific conditions:
     jobs:
       label:
         if: github.event.pull_request.draft == false
-        uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+        uses: workflow-kit/pr-auto-labeler@v0.0.1
         with:
           enabled_rules: '["ui-change", "test-missing"]'
     ```
@@ -206,7 +206,7 @@ Run the labeler only on specific conditions:
     jobs:
       label:
         if: github.actor != 'dependabot[bot]'
-        uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+        uses: workflow-kit/pr-auto-labeler@v0.0.1
         with:
           enabled_rules: '["ui-change"]'
     ```
@@ -219,13 +219,13 @@ Run different rule sets based on file paths:
 jobs:
   label-frontend:
     if: contains(github.event.pull_request.changed_files, 'frontend/')
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["ui-change", "style-change", "test-missing"]'
       
   label-backend:
     if: contains(github.event.pull_request.changed_files, 'backend/')
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["migration", "security-change", "test-missing"]'
 ```
@@ -294,7 +294,7 @@ Rules are organized into categories. Here's a quick reference:
 When v1.0.0 is released, update the version reference:
 
 ```yaml hl_lines="2"
-uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+uses: workflow-kit/pr-auto-labeler@v0.0.1
 # Change to:
 uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v1.0.0
 ```
@@ -305,7 +305,7 @@ Check the [Changelog](https://github.com/workflow-kit/pr-auto-labeler/releases) 
 
 ## Next Steps
 
-- [:material-book-open-variant: Explore All Rules](rules/index.md)
-- [:material-lightbulb-on: See Configuration Examples](examples.md)
-- [:material-help-circle: Troubleshooting Guide](troubleshooting.md)
+- [📖 Explore All Rules](rules/index.md)
+- [💡 See Configuration Examples](examples.md)
+- [❓ Troubleshooting Guide](troubleshooting.md)
 

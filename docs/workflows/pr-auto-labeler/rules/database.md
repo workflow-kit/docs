@@ -173,7 +173,7 @@ enabled_rules: '[
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v0.0.1
+    uses: workflow-kit/pr-auto-labeler@v0.0.1
     with:
       enabled_rules: '["risky-migration"]'
       
@@ -226,9 +226,9 @@ jobs:
 
 ## Related Rules
 
-- [**test-missing**](testing.md#test-missing) :material-test-tube: — Ensure migrations have tests
-- [**security-change**](security.md#security-change) :material-shield-lock: — Sensitive data access
-- [**large-pr**](meta.md#large-pr) :material-file-document: — Large migration files
+- [**test-missing**](testing.md#test-missing) 🧪 — Ensure migrations have tests
+- [**security-change**](security.md#security-change) 🔒 — Sensitive data access
+- [**large-pr**](meta.md#large-pr) 📄 — Large migration files
 
 [← Back to Rules Overview](index.md){ .md-button }
 
