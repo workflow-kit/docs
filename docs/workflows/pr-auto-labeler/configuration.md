@@ -141,8 +141,7 @@ permissions:
 
 jobs:
   label:
-    runs-on: ubuntu-latest
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       # Enable specific rules
       enabled_rules: '[
@@ -184,7 +183,7 @@ Run the labeler only on specific conditions:
     jobs:
       label:
         if: github.event.pull_request.draft == false
-        uses: workflow-kit/pr-auto-labeler@v0.0.1
+        uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
         with:
           enabled_rules: '["ui-change", "test-missing"]'
     ```
@@ -206,7 +205,7 @@ Run the labeler only on specific conditions:
     jobs:
       label:
         if: github.actor != 'dependabot[bot]'
-        uses: workflow-kit/pr-auto-labeler@v0.0.1
+        uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
         with:
           enabled_rules: '["ui-change"]'
     ```
@@ -219,13 +218,13 @@ Run different rule sets based on file paths:
 jobs:
   label-frontend:
     if: contains(github.event.pull_request.changed_files, 'frontend/')
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '["ui-change", "style-change", "test-missing"]'
       
   label-backend:
     if: contains(github.event.pull_request.changed_files, 'backend/')
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '["migration", "security-change", "test-missing"]'
 ```
@@ -289,14 +288,14 @@ Rules are organized into categories. Here's a quick reference:
 
 ## Migration Guide
 
-### From v0.0.1 to v1.0.0 (Future)
+### From v0.0.1 to Latest
 
-When v1.0.0 is released, update the version reference:
+Update to use the workflow file path format:
 
 ```yaml hl_lines="2"
 uses: workflow-kit/pr-auto-labeler@v0.0.1
 # Change to:
-uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@v1.0.0
+uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
 ```
 
 Check the [Changelog](https://github.com/workflow-kit/pr-auto-labeler/releases) for breaking changes.

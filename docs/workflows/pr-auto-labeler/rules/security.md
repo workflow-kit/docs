@@ -81,7 +81,7 @@ Require security team review:
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '["security-change"]'
       
@@ -180,7 +180,7 @@ Block PRs with risky code using GitHub Actions:
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '["risky-code"]'
       
@@ -228,7 +228,7 @@ permissions:
 jobs:
   security-labels:
     runs-on: ubuntu-latest
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '[
         "security-change",

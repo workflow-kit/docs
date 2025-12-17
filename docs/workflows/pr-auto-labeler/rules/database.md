@@ -173,7 +173,7 @@ enabled_rules: '[
 ```yaml
 jobs:
   label:
-    uses: workflow-kit/pr-auto-labeler@v0.0.1
+    uses: workflow-kit/pr-auto-labeler/.github/workflows/pr-auto-labeler.yml@latest
     with:
       enabled_rules: '["risky-migration"]'
       
